@@ -38,7 +38,7 @@ SUN_CORE = (255, 217, 61)
 SUN_EDGE = (255, 183, 3)
 RAY_A = (255, 183, 3)
 RAY_B = (255, 214, 64)
-CHEEK = (255, 138, 128)
+CHEEK = (255, 118, 128)
 RAINBOW = [(255, 89, 94), (255, 146, 76), (255, 202, 58),
            (138, 201, 38), (76, 201, 240), (154, 108, 224)]
 HILL_BACK = (142, 208, 129)
@@ -215,9 +215,9 @@ def scene():
     d = ImageDraw.Draw(img)
     sun(d, scx, scy, sr)
 
-    # clouds
+    # clouds (both big clouds smile back at the sun)
     cloud(d, int(W * 0.115), int(H * 0.135), int(W * 0.075), face=True)
-    cloud(d, int(W * 0.80), int(H * 0.105), int(W * 0.058))
+    cloud(d, int(W * 0.80), int(H * 0.105), int(W * 0.058), face=True)
 
     # rolling hills
     d.ellipse([-int(W * 0.35), int(H * 0.60), int(W * 0.75), int(H * 1.18)],
